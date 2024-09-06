@@ -97,8 +97,8 @@ nav {
 .buttonva {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido del botón */
-    padding: 10px 20px; /* Ajusta el padding si es necesario */
+    justify-content: center; 
+    padding: 10px 20px; 
     border-radius: 50px;
     cursor: pointer;
     border: 0;
@@ -199,7 +199,7 @@ button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Esto centra verticalmente si el contenedor tiene altura suficiente */
+    align-items: center;
     text-align: center;
 }
 
@@ -294,7 +294,7 @@ button {
 .right-section .playlist-item:hover .info p,
 .right-section .playlist-item:active .info h3,
 .right-section .playlist-item:active .info p {
-    color: #fff !important; /* Forzar el cambio de color a blanco en hover y active */
+    color: #fff !important; 
 }
 
 .right-section .playlist-item .info p {

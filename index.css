@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* .suse-<uniquifier> {
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
@@ -374,8 +373,6 @@ label {
 button {
     font-family: "Nunito", system-ui;
     padding: 10px 20px;
-    /* margin: 10px;
-    background-color: #000000; */
     color: #000;
     text-decoration: none !important;
     border: none;
@@ -581,7 +578,7 @@ input[type="range"].rango::-webkit-slider-runnable-track {
     transition: 0.3s ease-out;
 }
 
-/*Hover*/
+/*Hovercard*/
 .card:hover {
     border-color: rgb(93 24 220);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
