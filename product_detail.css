@@ -1,336 +1,343 @@
-
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 body::-webkit-scrollbar:vertical {
-    width: 7px;
+	width: 7px;
 }
 
 body::-webkit-scrollbar-button:increment,
 body::-webkit-scrollbar-button {
-    display: none;
+	display: none;
 }
 
 body::-webkit-scrollbar:horizontal {
-    height: 5px;
+	height: 5px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #a0a0a0;
-    border-radius: 20px;
-    border: 1px solid #f1f2f3;
+	background-color: #a0a0a0;
+	border-radius: 20px;
+	border: 1px solid #f1f2f3;
 }
 
 body::-webkit-scrollbar-track {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 body {
-    font-family: "Nunito", system-ui !important;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+	font-family: "Nunito", system-ui !important;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 nav {
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    background-color: #e8e8e800;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	background-color: #e8e8e800;
 }
 
 .logodebts {
-    width: 3%;
-    margin-left: 100px;
+	width: 3%;
+	margin-left: 100px;
 }
 
 .cta {
-    border: none;
-    background: none;
-    cursor: pointer;
+	border: none;
+	background: none;
+	cursor: pointer;
 }
 
 .cta span {
-    font-family: "Nunito", system-ui;
-    padding-bottom: 5px;
-    letter-spacing: 4px;
-    font-size: 14px;
-    text-transform: uppercase;
+	font-family: "Nunito", system-ui;
+	padding-bottom: 5px;
+	letter-spacing: 4px;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .hover-underline-animation {
-    position: relative;
-    color: black;
-    padding-bottom: 2px;
+	position: relative;
+	color: black;
+	padding-bottom: 2px;
 }
 
 .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: auto;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+	content: "";
+	position: absolute;
+	width: auto;
+	transform: scaleX(0);
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-color: #000000;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
 }
 
 .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }
 
 .buttonva {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 10px 20px; 
-    border-radius: 50px;
-    cursor: pointer;
-    border: 0;
-    background-color: rgb(243, 243, 243) !important;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px !important;
-    text-transform: uppercase !important;
-    font-size: 15px !important;
-    transition: all 0.2s ease !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	border-radius: 50px;
+	cursor: pointer;
+	border: 0;
+	background-color: rgb(243, 243, 243) !important;
+	box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+	letter-spacing: 1.5px !important;
+	text-transform: uppercase !important;
+	font-size: 15px !important;
+	transition: all 0.2s ease !important;
 }
 
 .buttonva:hover {
-    letter-spacing: 2px;
-    background-color: hsl(261deg 80% 48%) !important;
-    color: hsl(0, 0%, 100%) !important;
-    box-shadow: rgba(93, 24, 220, 0.527) 0px 7px 10px 0px;
+	letter-spacing: 2px;
+	background-color: hsl(261deg 80% 48%) !important;
+	color: hsl(0, 0%, 100%) !important;
+	box-shadow: rgba(93, 24, 220, 0.527) 0px 7px 10px 0px;
 }
 
 .buttonva:active {
-    letter-spacing: 1px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-    transform: translateY(10px);
-    transition: 1ms;
+	letter-spacing: 1px;
+	background-color: hsl(261deg 80% 48%);
+	color: hsl(0, 0%, 100%);
+	box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+	transform: translateY(10px);
+	transition: 1ms;
 }
 
-a{
-    text-decoration: none !important;
+a {
+	text-decoration: none !important;
 }
 
 button {
-    font-family: "Nunito", system-ui;
-    padding: 10px 20px;
-    color: #000;
-    text-decoration: none !important;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
+	font-family: "Nunito", system-ui;
+	padding: 10px 20px;
+	color: #000;
+	text-decoration: none !important;
+	border: none;
+	cursor: pointer;
+	border-radius: 20px;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
 }
 
 .content {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	margin-top: 20px;
 }
 
 .left-section {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    border: 1px solid #f0f0f0;
+	flex: 1;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-right: 20px;
+	border: 1px solid #f0f0f0;
 }
+
 .left-section .vinyl {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
 }
+
 .left-section .vinyl img {
-    width: 100%;
-    border-radius: 5%;
+	width: 100%;
+	border-radius: 5%;
 }
+
 .left-section .song-info {
-    text-align: center;
-    margin-top: 20px;
+	text-align: center;
+	margin-top: 20px;
 }
+
 .left-section .song-info h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
 }
+
 .left-section .song-info h2 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #333;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
 }
+
 .left-section .song-info p {
-    font-size: 14px;
-    font-weight: 300;
-    color: #333;
-    margin-top: 10px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #333;
+	margin-top: 10px;
 }
+
 .left-section .save-song {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .left-section .save-song button {
-    background-color: black;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    cursor: pointer;
+	background-color: black;
+	border-radius: 20px;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #333;
+	cursor: pointer;
 }
 
 .right-section {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: auto;
-    height: 500px;
-    border: 1px solid #f0f0f0;
+	flex: 1;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: auto;
+	height: 500px;
+	border: 1px solid #f0f0f0;
 }
 
 .right-section::-webkit-scrollbar {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 .right-section::-webkit-scrollbar:vertical {
-    width: 7px;
+	width: 7px;
 }
 
 .right-section::-webkit-scrollbar-button:increment,
 .right-section::-webkit-scrollbar-button {
-    display: none;
+	display: none;
 }
 
 .right-section::-webkit-scrollbar:horizontal {
-    height: 5px;
+	height: 5px;
 }
 
 .right-section::-webkit-scrollbar-thumb {
-    background-color: #a0a0a0;
-    border-radius: 20px;
-    border: 1px solid #f1f2f3;
+	background-color: #a0a0a0;
+	border-radius: 20px;
+	border: 1px solid #f1f2f3;
 }
 
 .right-section::-webkit-scrollbar-track {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 .right-section h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 700;
+	color: black;
+	margin-bottom: 20px;
 }
-.right-section .playlist-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    background-color: #f5f5f5;
-    transition: background-color 0.2s ease-in, color 0.2s ease-in; 
 
+.right-section .playlist-item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	background-color: #f5f5f5;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
 .right-section .playlist-item:hover,
 .right-section .playlist-item:active {
-    background-color: rgb(93, 24, 220);
-    color: #fff !important;
+	background-color: rgb(93, 24, 220);
+	color: #fff !important;
 }
 
 .right-section .playlist-item img {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	margin-right: 10px;
 }
+
 .right-section .playlist-item .info {
-    flex: 1;
+	flex: 1;
 }
+
 .right-section .playlist-item .info h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    margin: 0;
-    transition: color 0.2s ease-in;
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+	margin: 0;
+	transition: color 0.2s ease-in;
 }
+
 .right-section .playlist-item:hover .info h3,
 .right-section .playlist-item:hover .info p,
 .right-section .playlist-item:active .info h3,
 .right-section .playlist-item:active .info p {
-    color: #fff !important; 
+	color: #fff !important;
 }
 
 .right-section .playlist-item .info p {
-    font-size: 14px;
-    font-weight: 300;
-    color: #333;
-    margin: 0;
-    transition: color 0.2s ease-in;
+	font-size: 14px;
+	font-weight: 300;
+	color: #333;
+	margin: 0;
+	transition: color 0.2s ease-in;
 }
 
 .image-container {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
 }
 
 .play-pause-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 14px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	font-size: 14px;
 }
 
-.infosongfyc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    
+.infosongfyc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 100px;
+	margin-right: 100px;
 }
