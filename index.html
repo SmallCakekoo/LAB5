@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Shop</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="imgs/logomenunegro.png" alt="logodebts" class="logodebts">
+        <button class="cta">
+            <span class="hover-underline-animation"> Menu </span>
+        </button>
+        <button class="cta">
+
+            <a href="#Productos"><span class="hover-underline-animation"> Productos </span></a>
+
+        </button>
+
+        <div class="buscador">
+            <input type="text" class="inputbuscar" placeholder="Buscar...">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <g>
+                    <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                    </path>
+                </g>
+            </svg>
+            </svg>
+        </div>
+    </nav>
+
+    <header>
+        <div class="ContainerHeader">
+            <div class="ContainerCenter">
+                <input class="inputc" type="radio" name="Carrusel" id="Slider1" checked>
+                <input class="inputc" type="radio" name="Carrusel" id="Slider2">
+                <input class="inputc" type="radio" name="Carrusel" id="Slider3">
+
+                <div class="Carrusels">
+                    <div class="Carrusel" style="background-image: url(imgs/Carrusel/11.jpg);"></div>
+                    <div class="Carrusel" style="background-image: url(imgs/Carrusel/55.jpg);"></div>
+                    <div class="Carrusel" style="background-image: url(imgs/Carrusel/33.jpg);"></div>
+
+                    <label for="Slider3" class="ArrowLeft Arrow1">
+                        <a href="product_detail.html?img=5.jpg&title=Wings" class="abva" data-img="5.jpg" data-title="Wings"><button class="CarruselText buttonva">
+                                Ver este Álbum
+                            </button></a>
+                    </label>
+                    <label for="Slider1" class="ArrowLeft Arrow2">
+                        <a href="product_detail.html?img=18.jpg&title=Map%20of%20the%20Soul%3A%207" class="abva" data-img="18.jpg" data-title="Map of the Soul: 7"><button class="CarruselText buttonva">
+                                Ver este Álbum
+                            </button></a>
+                    </label>
+                    <label for="Slider2" class="ArrowLeft Arrow3">
+                        <a href="product_detail.html?img=5.jpg&title=Wings" class="abva" data-img="5.jpg" data-title="Wings"><button class="CarruselText buttonva">
+                                Ver este Álbum
+                            </button></a>
+                    </label>
+
+                    <label for="Slider2" class="ArrowRight Arrow1"></label>
+                    <label for="Slider3" class="ArrowRight Arrow2"></label>
+                    <label for="Slider1" class="ArrowRight Arrow3"></label>
+                </div>
+
+                <div class="Selectors">
+                    <label for="Slider1" class="Selector"></label>
+                    <label for="Slider2" class="Selector"></label>
+                    <label for="Slider3" class="Selector"></label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" id="Productos">
+
+            <h1 class="np">
+                Nuestros Productos
+            </h1>
+
+            <div class="filter-bar">
+                <div>
+                    <button class="prol">
+                        Todos
+                    </button>
+                    <button class="prol">
+                        Nuevos
+                    </button>
+                </div>
+                <div class="price-range">
+                    <span>
+                        Price Range $20 - $150
+                    </span>
+                    <input max="150" min="20" type="range" value="50" class="rango" />
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="product-card card" data-img="1.jpg" data-title="Dark & Wild">
+                    <img alt="Album #1" src="imgs/Productos/1.jpg" />
+                    <div class="product-info">
+                        <p>19 / 08 / 2014</p>
+                        <h3>Dark & Wild</h3>
+                        <p class="price">$20.74</p>
+                    </div>
+                    <a href="product_detail.html?img=1.jpg&title=Dark%20%26%20Wild">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="2.jpg" data-title="The Most Beautiful Moment in Life PT1">
+                    <img alt="Album #2" src="imgs/Productos/2.jpg" />
+                    <div class="product-info">
+                        <p>29 / 04 / 2015</p>
+                        <h3>The Most Beautiful Moment in Life PT1</h3>
+                        <p class="price">$17.24</p>
+                    </div>
+                    <a href="product_detail.html?img=2.jpg&title=The%20Most%20Beautiful%20Moment%20in%20Life%20PT1">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="3.jpg" data-title="The Most Beautiful Moment in Life PT2">
+                    <img alt="Album #3" src="imgs/Productos/3.jpg" />
+                    <div class="product-info">
+                        <p>30 / 11 / 2015</p>
+                        <h3>The Most Beautiful Moment in Life PT2</h3>
+                        <p class="price">$23.99</p>
+                    </div>
+                    <a href="product_detail.html?img=3.jpg&title=The%20Most%20Beautiful%20Moment%20in%20Life%20PT2">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="4.jpg" data-title="O!RUL8,2?">
+                    <img alt="Album #4" src="imgs/Productos/4.jpg" />
+                    <div class="product-info">
+                        <p>11 / 09 / 2013</p>
+                        <h3>O!RUL8,2?</h3>
+                        <p class="price">$13.99</p>
+                    </div>
+                    <a href="product_detail.html?img=4.jpg&title=O!RUL8%2C2%3F">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="5.jpg" data-title="Wings">
+                    <img alt="Album #5" src="imgs/Productos/5.jpg" />
+                    <div class="product-info">
+                        <p>10 / 10 / 2016</p>
+                        <h3>Wings</h3>
+                        <p class="price">$25.97</p>
+                    </div>
+                    <a href="product_detail.html?img=5.jpg&title=Wings">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="6.jpg" data-title="You Never Walk Alone">
+                    <img alt="Album #6" src="imgs/Productos/6.jpg" />
+                    <div class="product-info">
+                        <p>13 / 02 / 2017</p>
+                        <h3>You Never Walk Alone</h3>
+                        <p class="price">$34.90</p>
+                    </div>
+                    <a href="product_detail.html?img=6.jpg&title=You%20Never%20Walk%20Alone">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="7.jpg" data-title="Love Yourself 承 'Her'">
+                    <img alt="Album #7" src="imgs/Productos/7.jpg" />
+                    <div class="product-info">
+                        <p>18 / 09 / 2017</p>
+                        <h3>Love Yourself 承 'Her'</h3>
+                        <p class="price">$23.49</p>
+                    </div>
+                    <a href="product_detail.html?img=7.jpg&title=Love%20Yourself%20%E6%89%BF%20%27Her%27">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="8.jpg" data-title="Love Yourself 轉 'Tear'">
+                    <img alt="Album #8" src="imgs/Productos/8.jpg" />
+                    <div class="product-info">
+                        <p>18 / 05 / 2018</p>
+                        <h3>Love Yourself 轉 'Tear'</h3>
+                        <p class="price">$19.25</p>
+                    </div>
+                    <a href="product_detail.html?img=8.jpg&title=Love%20Yourself%20%E8%BD%89%20%27Tear%27">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="9.jpg" data-title="Love Yourself 結 'Answer'">
+                    <img alt="Album #9" src="imgs/Productos/9.jpg" />
+                    <div class="product-info">
+                        <p>24 / 08 / 2018</p>
+                        <h3>Love Yourself 結 'Answer'</h3>
+                        <p class="price">$24.99</p>
+                    </div>
+                    <a href="product_detail.html?img=9.jpg&title=Love%20Yourself%20%E7%B5%90%20%27Answer%27">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="10.jpg" data-title="Map of the Soul: Persona">
+                    <img alt="Album #10" src="imgs/Productos/10.jpg" />
+                    <div class="product-info">
+                        <p>12 / 04 / 2019</p>
+                        <h3>Map of the Soul: Persona</h3>
+                        <p class="price">$19.05</p>
+                    </div>
+                    <a href="product_detail.html?img=10.jpg&title=Map%20of%20the%20Soul%3A%20Persona">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="11.jpg" data-title="TMBMIL: Young Forever">
+                    <img alt="Album #11" src="imgs/Productos/11.jpg" />
+                    <div class="product-info">
+                        <p>2 / 05 / 2016</p>
+                        <h3>TMBMIL: Young Forever</h3>
+                        <p class="price">$28.99</p>
+                    </div>
+                    <a href="product_detail.html?img=11.jpg&title=TMBMIL%3A%20Young%20Forever">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="12.jpg" data-title="2 Cool 4 Skool">
+                    <img alt="Album #12" src="imgs/Productos/12.jpg" />
+                    <div class="product-info">
+                        <p>13 / 06 / 2013</p>
+                        <h3>2 Cool 4 Skool</h3>
+                        <p class="price">$13.00</p>
+                    </div>
+                    <a href="product_detail.html?img=12.jpg&title=2%20Cool%204%20Skool">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="13.jpg" data-title="Skool Luv Affair">
+                    <img alt="Album #13" src="imgs/Productos/13.jpg" />
+                    <div class="product-info">
+                        <p>12 / 02 / 2014</p>
+                        <h3>Skool Luv Affair</h3>
+                        <p class="price">$17.93</p>
+                    </div>
+                    <a href="product_detail.html?img=13.jpg&title=Skool%20Luv%20Affair">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="14.jpg" data-title="Butter">
+                    <img alt="Album #14" src="imgs/Productos/14.jpg" />
+                    <div class="product-info">
+                        <p>9 / 07 / 2021</p>
+                        <h3>Butter</h3>
+                        <p class="price">$20.74</p>
+                    </div>
+                    <a href="product_detail.html?img=14.jpg&title=Butter">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="15.jpg" data-title="Butter Digital Single">
+                    <img alt="Album #15" src="imgs/Productos/15.jpg" />
+                    <div class="product-info">
+                        <p>21 / 05 / 2021</p>
+                        <h3>Butter Digital Single</h3>
+                        <p class="price">$23.99</p>
+                    </div>
+                    <a href="product_detail.html?img=15.jpg&title=Butter%20Digital%20Single">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="16.png" data-title="Take Two">
+                    <img alt="Album #16" src="imgs/Productos/16.png" />
+                    <div class="product-info">
+                        <p>8 / 06 / 2023</p>
+                        <h3>Take Two</h3>
+                        <p class="price">$1.29</p>
+                    </div>
+                    <a href="product_detail.html?img=16.png&title=Take%20Two">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="17.png" data-title="Proof">
+                    <img alt="Album #17" src="imgs/Productos/17.png" />
+                    <div class="product-info">
+                        <p>10 / 06 / 2022</p>
+                        <h3>Proof</h3>
+                        <p class="price">$17.92</p>
+                    </div>
+                    <a href="product_detail.html?img=17.png&title=Proof">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="18.jpg" data-title="Map of the Soul: 7">
+                    <img alt="Album #18" src="imgs/Productos/18.jpg" />
+                    <div class="product-info">
+                        <p>21 / 02 / 2020</p>
+                        <h3>Map of the Soul: 7</h3>
+                        <p class="price">$23.96</p>
+                    </div>
+                    <a href="product_detail.html?img=18.jpg&title=Map%20of%20the%20Soul%3A%207">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="19.jpg" data-title="DYNAMITE">
+                    <img alt="Album #19" src="imgs/Productos/19.jpg" />
+                    <div class="product-info">
+                        <p>21 / 08 / 2020</p>
+                        <h3>DYNAMITE</h3>
+                        <p class="price">$13.74</p>
+                    </div>
+                    <a href="product_detail.html?img=19.jpg&title=DYNAMITE">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+
+                <div class="product-card card" data-img="20.jpg" data-title="Be">
+                    <img alt="Album #20" src="imgs/Productos/20.jpg" />
+                    <div class="product-info">
+                        <p>20 / 11 / 2020</p>
+                        <h3>Be</h3>
+                        <p class="price">$34.99</p>
+                    </div>
+                    <a href="product_detail.html?img=20.jpg&title=Be">
+                        <button class="card-button">Más Info</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const rangeInput = document.querySelector('.rango');
+
+        function updateBackground() {
+            const min = rangeInput.min;
+            const max = rangeInput.max;
+            const val = rangeInput.value;
+
+            rangeInput.style.setProperty('--val', val);
+        }
+
+        rangeInput.addEventListener('input', updateBackground);
+
+        // Inicializar la primera vez
+        updateBackground();
+
+    </script>
+
+</body>
+
+</html>
